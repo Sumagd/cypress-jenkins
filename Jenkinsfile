@@ -5,7 +5,7 @@ pipeline{
                 steps{
                     sh 'npm install'
                     sh 'npm install cypress@9.5.0'
-                    sh 'npm run cypress:run'
+                    sh 'docker npm run cypress:run'
                 }
             }
         }
