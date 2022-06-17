@@ -5,7 +5,7 @@ pipeline{
                 steps{
                     sh 'npm install typescript'
                     sh 'npm install cypress@9.5.0'
-                    sh 'npm test'
+                    sh 'npm run cypress:run'
                 }
             }
         }
